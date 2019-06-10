@@ -3,11 +3,16 @@ UUID helper for Database schemas
 Adds the functionality of uuid column in your database table and your schema.
 
 Steps to use this library -
-1. Add the dependecy to your mix.exs file -
+
+#### STEP 1
+
+Add the dependecy to your mix.exs file -
 
 `{:uuid_helper_module, "~> 0.0.2"}`
 
-2. Migration -
+#### STEP 2
+
+Migration -
 
 Create a migration using the following command -
 
@@ -27,7 +32,9 @@ def down do
 end
 ```
 
-3. Now to add uuid column in your table and schema.
+#### STEP 3
+
+Now to add uuid column in your table and schema.
 
 Add uuid to a `schema` named `User` -
 
