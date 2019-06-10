@@ -10,7 +10,8 @@ defmodule UuidHelperModule.Mixfile do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -53,6 +54,16 @@ defmodule UuidHelperModule.Mixfile do
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate", "test"]
+    ]
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README.md", "priv", "LICENSE"],
+      maintainers: ["Sajal Sharma"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/cosmos-sajal/phoenix-uuid-helper"},
+      description: "A library to give support of uuid_helper in database tables"
     ]
   end
 end
