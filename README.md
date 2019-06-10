@@ -1,4 +1,4 @@
-# UUID Helper module for phoenix application
+# UUID Helper module for Phoenix (Elixir) application
 UUID helper for Database schemas
 Adds the functionality of uuid column in your database table and your schema.
 
