@@ -5,11 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="ExDoc v0.20.2">
-    <meta name="project" content="uuid_helper_module v0.0.1">
-    <title>UuidHelperModule.UUIDSchema — uuid_helper_module v0.0.1</title>
+    <meta name="project" content="uuid_helper_module v0.0.2">
+    <title>UuidHelperModule.UUIDSchema — uuid_helper_module v0.0.2</title>
     <link rel="stylesheet" href="dist/html-d9f58a6320b5bfa6dd77.css" />
       <link rel="canonical" href="https://hexdocs.pm/uuid_helper_module/UuidHelperModule.UUIDSchema.html" />
-    <script src="dist/sidebar_items-de7b3aaca6.js"></script>
+    <script src="dist/sidebar_items-63bcf5d0d1.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/html-d9f58a6320b5bfa6dd77.js"></script>
     
@@ -45,7 +45,7 @@
       <a href="api-reference.html" class="sidebar-projectName">
 uuid_helper_module      </a>
       <h2 class="sidebar-projectVersion">
-        v0.0.1
+        v0.0.2
       </h2>
     </div>
   </div>
@@ -67,7 +67,7 @@ uuid_helper_module      </a>
 
 
       <h1>
-        <small class="app-vsn">uuid_helper_module v0.0.1</small>
+        <small class="app-vsn">uuid_helper_module v0.0.2</small>
 UuidHelperModule.UUIDSchema              </h1>
 
 
@@ -134,14 +134,16 @@ Functions          </h1>
       </div>
   <section class="docstring">
 <p>Adds the uuid column to a schema</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">User</span><span class="w"> </span><span class="k" data-group-id="8417054904-1">do</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">User</span><span class="w"> </span><span class="k" data-group-id="6144072623-1">do</span><span class="w">
   </span><span class="kn">use</span><span class="w"> </span><span class="nc">Ecto.Schema</span><span class="w">
-  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Trafi.ModelHelpers.UUID.Schema</span><span class="w">
-  </span><span class="n">schema</span><span class="w"> </span><span class="s">&quot;users&quot;</span><span class="w"> </span><span class="k" data-group-id="8417054904-2">do</span><span class="w">
-    </span><span class="n">field</span><span class="w"> </span><span class="ss">:email</span><span class="p">,</span><span class="w">           </span><span class="ss">:string</span><span class="w">
-    </span><span class="n">uuid_schema</span><span class="p" data-group-id="8417054904-3">(</span><span class="p" data-group-id="8417054904-3">)</span><span class="w">
-  </span><span class="k" data-group-id="8417054904-2">end</span><span class="w">
-</span><span class="k" data-group-id="8417054904-1">end</span></code></pre>
+
+  </span><span class="kn">import</span><span class="w"> </span><span class="nc">UuidHelperModule.UUIDSchema</span><span class="w">
+
+  </span><span class="n">schema</span><span class="w"> </span><span class="s">&quot;users&quot;</span><span class="w"> </span><span class="k" data-group-id="6144072623-2">do</span><span class="w">
+    </span><span class="n">field</span><span class="w"> </span><span class="ss">:email</span><span class="p">,</span><span class="w"> </span><span class="ss">:string</span><span class="w">
+    </span><span class="n">uuid_schema</span><span class="p" data-group-id="6144072623-3">(</span><span class="p" data-group-id="6144072623-3">)</span><span class="w">
+  </span><span class="k" data-group-id="6144072623-2">end</span><span class="w">
+</span><span class="k" data-group-id="6144072623-1">end</span></code></pre>
   </section>
 </section>
           </div>
