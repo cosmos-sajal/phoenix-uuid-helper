@@ -9,9 +9,11 @@ defmodule UuidHelperModule.UUIDSchema do
   Adds the uuid column to a schema
       defmodule User do
         use Ecto.Schema
-        import Trafi.ModelHelpers.UUID.Schema
+
+        import UuidHelperModule.UUIDSchema
+
         schema "users" do
-          field :email,           :string
+          field :email, :string
           uuid_schema()
         end
       end

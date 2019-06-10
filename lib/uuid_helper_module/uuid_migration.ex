@@ -9,12 +9,12 @@ defmodule UuidHelperModule.UUIDMigration do
   Adds uuid column to a table.
       defmodule MyApp.Repo.Migrations.CreateUser do
         use Ecto.Migration
-        import Trafi.ModelHelpers.UUID.Migration
+
+        import UuidHelperModule.UUIDMigration
+
         def change do
           create table(:users) do
-            add :email, :string
-            add :password, :string
-            timestamps()
+            add :name, :string
 
             uuid_column()
           end
