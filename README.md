@@ -79,3 +79,6 @@ end
 These will create uuid column to your schema and migration.
 
 Try running the migration using `mix ecto.migrate`.
+
+#### Hex Package -
+https://hex.pm/packages/uuid_helper_module
