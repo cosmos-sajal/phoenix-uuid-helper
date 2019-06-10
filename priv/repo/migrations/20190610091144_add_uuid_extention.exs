@@ -6,6 +6,6 @@ defmodule UuidHelperModule.Repo.Migrations.AddUuidExtention do
   end
 
   def down do
-    execute("DROP EXTENSION \"uuid_helper-ossp\";")
+    execute("DROP EXTENSION \"uuid-ossp\";")
   end
 end
